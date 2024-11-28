@@ -1,0 +1,72 @@
+@import "../../App.scss";
+.sc-category{
+    @media screen and (min-width: 420px){
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+    }
+
+    @media screen and (min-width: 576px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (min-width: 992px){
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (min-width: 1080px){
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+  
+
+    .category-itm{
+        background-color: $clr-white;
+        position: relative;
+        margin: 12px auto;
+        border-radius: 15px;
+        box-shadow: rgba(99, 99, 99, 0.09) 0px 2px 8px 0px;
+
+        @media screen and (max-width: 420px){
+            margin-bottom: 30px !important;
+        }
+
+        &-img{
+            height: 150px;
+            position: relative;
+            border-radius: 15px;
+
+            @media screen and (max-width: 420px){
+                height: 150px;
+                margin-bottom: 40px;
+            }
+
+            img{
+                padding: 12px;
+                transition: $transition;
+                border-radius: 5px;
+            }
+
+            &:hover{
+                img{
+                    transform: scale(0.8);
+                }
+            }
+        }
+        &-title{
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            padding: 1px 8px;
+            border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+            transition: $transition;
+        }
+
+        &:hover{
+            .category-itm-title{
+                opacity: 1;
+                border-radius: 2px;
+            }
+        }
+    }
+}
