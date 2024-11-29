@@ -191,3 +191,17 @@
         }
     }
 }
+
+.map {
+    width: 100%;
+    margin-top: 20px;
+    .map-container {
+        height: 300px;
+        @media screen and (min-width: 576px) {
+            height: 350px;
+        }
+        @media screen and (min-width: 768px) {
+            height: 400px;
+        }
+    }
+}
