@@ -10,7 +10,7 @@ const containerStyle = {
 function MyComponent({locations}) {
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: 'Put-Api-Key-Here',
+        googleMapsApiKey: 'AIzaSyBektsjMOXQFB5GrDW3RwDkOiG8LeTaIds',
     })
 
     const center = locations && locations.length > 0 ? locations[0] : { lat: 0, lng: 0 };
