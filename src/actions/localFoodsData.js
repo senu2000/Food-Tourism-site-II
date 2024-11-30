@@ -11,7 +11,11 @@ export const localFoods = {
             tags: ["Spicy", "Traditional"],
             youtube: "https://youtube.com/example-rice-and-curry", // Replace with actual video link
             ingredients: ["Rice", "Coconut milk", "Spices", "Vegetables"],
-            measures: ["1 cup", "1 cup", "To taste", "1 cup"]
+            measures: ["1 cup", "1 cup", "To taste", "1 cup"],
+            locations: [
+                { lat: 6.9271, lng: 79.8612 },
+                { lat: 7.8731, lng: 80.7718 }
+            ]
         },
         {
             id: "2",
@@ -24,7 +28,11 @@ export const localFoods = {
             tags: ["Traditional", "Breakfast"],
             youtube: "https://youtube.com/example-milk-rice",
             ingredients: ["Rice", "Coconut milk", "Salt"],
-            measures: ["1 cup", "1 cup", "1/4 tsp"]
+            measures: ["1 cup", "1 cup", "1/4 tsp"],
+            locations: [
+                { lat: 6.9271, lng: 79.8612 },
+                { lat: 7.8731, lng: 80.7718 }
+            ]
         }
         // Add more meal objects here
     ],
@@ -40,7 +48,11 @@ export const localFoods = {
             tags: ["Vegan", "Side dish"],
             youtube: "https://youtube.com/example-dhal-curry",
             ingredients: ["Lentils", "Coconut milk", "Spices"],
-            measures: ["1 cup", "1 cup", "To taste"]
+            measures: ["1 cup", "1 cup", "To taste"],
+            locations: [
+                { lat: 6.9271, lng: 79.8612 },
+                { lat: 7.8731, lng: 80.7718 }
+            ]
         }
         // Add more meal objects here
     ]

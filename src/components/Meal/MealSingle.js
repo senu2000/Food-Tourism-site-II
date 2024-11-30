@@ -132,6 +132,7 @@ import { AiFillHome } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { BiChevronsRight } from "react-icons/bi";
 import { AiOutlineCheckSquare } from "react-icons/ai";
+import Maps from "../GoogleMaps/Maps"
 
 const MealSingle = ({ meal }) => {
   console.log(meal);
@@ -240,6 +241,15 @@ const MealSingle = ({ meal }) => {
                   ))}
                 </ul>
               </div>
+
+              <div className="map my-4">
+                <h6 className="fs-16">Where to find:</h6>
+                <div className="map-container">  {/* New container div */}
+                  <Maps locations={meal?.locations} />
+                </div>
+              </div>
+
+
             </div>
           </section>
         </div>
